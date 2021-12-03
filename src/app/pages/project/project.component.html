@@ -1,8 +1,12 @@
-<header class="masthead" style="background-image: url(&quot;assets/img/proyects/proyect-Adina.jpg&quot;);">
+<header *ngIf="project[0] != null" class="masthead" style="background-image: url('{{project[0].image}}');">
     <div class="container">
         <div class="intro-text">
-            <div class="intro-heading text-uppercase"><span
-                    style="-webkit-text-stroke: 1px rgba(120,120,120,0.50);">ProYECTO<br>ADINA</span></div>
+            <div class="intro-heading text-uppercase">
+                <span style="-webkit-text-stroke: 1px rgba(120,120,120,0.50);">
+                    PROYECTO<br>
+                    {{project[0].name}}
+                </span>
+            </div>
                     <a class="btn btn-primary border-dark btn-xl text-uppercase js-scroll-trigger" role="button"
                 href="#portfolio" style="background-color: rgb(255,165,85);border:none;">NUESTROS<br>DEPARTAMENTOS</a>
         </div>
@@ -16,88 +20,21 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-4 portfolio-item">
-                <a routerLink="/aparment/1" class="portfolio-link" data-toggle="modal">
+            <div *ngFor="let a of apartments" class="col-sm-6 col-md-4 portfolio-item">
+                <a routerLink="/aparment/{{a.id}}/{{a.projectId}}" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid" src="assets/img/departments/department-Adina-01.jpg"><a
-                        class="btn btn-primary border-dark text-uppercase" role="button" href="#portfolio"
-                        style="background-color: rgb(255,165,85);border: none;position: absolute;right: 5px;bottom: 5px;font-size: 12px;font-weight: bold;color: rgba(255,255,255,0.75);">Cotizar</a>
+                    </div>
+                    <img class="img-fluid" src="{{a.image[0].path}}">
+                    <a  class="btn btn-primary border-dark text-uppercase" role="button" href="#portfolio"
+                        style="background-color: rgb(255,165,85);border: none;position: absolute;right: 5px;bottom: 5px;font-size: 12px;font-weight: bold;color: rgba(255,255,255,0.75);">
+                        Cotizar</a>
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Nº 43</h4>
-                    <p class="text-muted"><strong><em>145 m² - 4ºPiso</em><br></strong></p>
-                    <p class="text-muted">Mixto</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 portfolio-item">
-                <a routerLink="/aparment/2" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid" src="assets/img/departments/department-Boulogne-01.jpg"><a
-                        class="btn btn-primary border-dark text-uppercase" role="button" href="#portfolio"
-                        style="background-color: rgb(255,165,85);border: none;position: absolute;right: 5px;bottom: 5px;font-size: 12px;font-weight: bold;color: rgba(255,255,255,0.75);">Cotizar</a>
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Nº 36</h4>
-                    <p class="text-muted"><strong><em>214 m² - 3ºPiso</em><br></strong></p>
-                    <p class="text-muted">Duplex</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 portfolio-item">
-                <a routerLink="/aparment/3" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid" src="assets/img/departments/department-Collings-01.jpg"><a
-                        class="btn btn-primary border-dark text-uppercase" role="button" href="#portfolio"
-                        style="background-color: rgb(255,165,85);border: none;position: absolute;right: 5px;bottom: 5px;font-size: 12px;font-weight: bold;color: rgba(255,255,255,0.75);">Cotizar</a>
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Nº 61</h4>
-                    <p class="text-muted"><strong><em>158 m² - 6ºPiso</em><br></strong></p>
-                    <p class="text-muted">Estudio</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 portfolio-item">
-                <a routerLink="/aparment/4" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid" src="assets/img/departments/department-PacificHighway-01.jpg"><a
-                        class="btn btn-primary border-dark text-uppercase" role="button" href="#portfolio"
-                        style="background-color: rgb(255,165,85);border: none;position: absolute;right: 5px;bottom: 5px;font-size: 12px;font-weight: bold;color: rgba(255,255,255,0.75);">Cotizar</a>
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Nº 56</h4>
-                    <p class="text-muted"><strong><em>110 m² - 5ºPiso</em><br></strong></p>
-                    <p class="text-muted">Loft</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 portfolio-item">
-                <a routerLink="/aparment/5" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid img-fluid" src="assets/img/departments/department-Thomas-01.jpg"><a
-                        class="btn btn-primary border-dark text-uppercase" role="button" href="#portfolio"
-                        style="background-color: rgb(255,165,85);border: none;position: absolute;right: 5px;bottom: 5px;font-size: 12px;font-weight: bold;color: rgba(255,255,255,0.75);">Cotizar</a>
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Nº 13</h4>
-                    <p class="text-muted"><strong><em>130 m² - 1ºPiso</em><br></strong></p>
-                    <p class="text-muted">Flat</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 portfolio-item">
-                <a routerLink="/aparment/6" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid" src="assets/img/departments/department-Timber-01.jpg"><a
-                        class="btn btn-primary border-dark text-uppercase" role="button" href="#portfolio"
-                        style="background-color: rgb(255,165,85);border: none;position: absolute;right: 5px;bottom: 5px;font-size: 12px;font-weight: bold;color: rgba(255,255,255,0.75);">Cotizar</a>
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Nº 79</h4>
-                    <p class="text-muted"><strong><em>290 m² - 7ºPiso</em><br></strong></p>
-                    <p class="text-muted">Tradicional</p>
+                    <h4>{{a.name}}</h4>
+                    <p class="text-muted"><strong><em>{{a.size}} - {{a.floor}}</em><br></strong></p>
+                    <h5>{{a.price}}</h5>
+                    <p class="text-muted">{{a.type}}</p>
                 </div>
             </div>
         </div>

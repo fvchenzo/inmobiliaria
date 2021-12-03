@@ -16,7 +16,7 @@ const routes: Routes = [
     {path: 'contactus', component: ContactusComponent},
     {path: 'access', component: LoginComponent},
     {path: 'project/:id', component: ProjectComponent}, //con parametro
-    {path: 'aparment/:id', component: ApartmentComponent}, //con parametro
+    {path: 'aparment/:id/:projectId', component: ApartmentComponent}, //con parametro
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     //Admin
     {path: 'admin/regApartment', component: RegisterApartmentComponent},
