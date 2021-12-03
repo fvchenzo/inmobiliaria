@@ -4,7 +4,8 @@
             "projectId": 1,
             "id": 1,
             "name": "Nº 43",
-            "price": "145 m²",
+            "size": "145 m²",
+            "price": "S/. 500,000",
             "floor": "4ºPiso",
             "type": "Mixto",
             "image": [
@@ -39,7 +40,8 @@
             "projectId": 1,
             "id": 2,
             "name": "Nº 13",
-            "price": "185 m²",
+            "size": "185 m²",
+            "price": "S/. 500,000",
             "floor": "2ºPiso",
             "type": "Duplex",
             "image": [
@@ -54,7 +56,8 @@
             "projectId": 1,
             "id": 3,
             "name": "Nº 33",
-            "price": "85 m²",
+            "size": "85 m²",
+            "price": "S/. 500,000",
             "floor": "1ºPiso",
             "type": "Estudio",
             "image": [
@@ -69,7 +72,8 @@
             "projectId": 2,
             "id": 4,
             "name": "Nº 13",
-            "price": "285 m²",
+            "size": "285 m²",
+            "price": "S/. 500,000",
             "floor": "7ºPiso",
             "type": "Duplex",
             "image": [
@@ -84,7 +88,8 @@
             "projectId": 3,
             "id": 5,
             "name": "Nº 13",
-            "price": "285 m²",
+            "size": "285 m²",
+            "price": "S/. 500,000",
             "floor": "7ºPiso",
             "type": "Duplex",
             "image": [
@@ -99,7 +104,8 @@
             "projectId": 4,
             "id": 6,
             "name": "Nº 13",
-            "price": "285 m²",
+            "size": "285 m²",
+            "price": "S/. 400,000",
             "floor": "7ºPiso",
             "type": "Duplex",
             "image": [
@@ -114,7 +120,8 @@
             "projectId": 5,
             "id": 7,
             "name": "Nº 13",
-            "price": "285 m²",
+            "size": "285 m²",
+            "price": "S/. 600,000",
             "floor": "7ºPiso",
             "type": "Duplex",
             "image": [
@@ -129,7 +136,8 @@
             "projectId": 6,
             "id": 8,
             "name": "Nº 13",
-            "price": "300 m²",
+            "size": "300 m²",
+            "price": "S/. 700,000",
             "floor": "7ºPiso",
             "type": "Flat",
             "image": [
